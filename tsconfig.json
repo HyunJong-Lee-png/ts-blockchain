@@ -1,0 +1,16 @@
+{
+  //타입스크립트 파일의 위치를 찾아준다.
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "ES6",
+    //모듈 해석을 node해석 알고리즘을 이용할것이냐
+    "moduleResolution": "Node",
+    "lib": ["ES6"],
+ 
+    //기본내보내기(export default가 없다는 에러시)
+    "esModuleInterop": true,
+    "strict": true,
+    "module": "CommonJS"
+  }
+}
