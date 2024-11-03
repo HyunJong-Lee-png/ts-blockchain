@@ -1,4 +1,6 @@
 import crypto from 'crypto';
+import {init} from 'myPackage'
+
 
 interface BlockShape {
   hash: string
@@ -51,4 +53,4 @@ const block = new BlockChain()
 block.addBlock('ss');
 block.addBlock('ss1');
 block.getBlocks()[0].hash = '31faw2'
-console.log(block.getBlocks())
+console.log(block.getBlocks(),'ㅎㅇ')

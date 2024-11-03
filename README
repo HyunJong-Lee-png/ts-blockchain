@@ -1,0 +1,9 @@
+include:["**/*"]에서
+** : 자신을 포함한 모든 하위 디렉토리 ex// src, src/components, src/utils등의 폴더를 찾는다.
+* : 모든 파일 ex// index.ts, index.js, index.css
+
+=> **/* : 현재 디렉토리와 모든 하위 디렉토리 내의 모든파일을 의미
+
+import {init} from "./myPackage"는 allowJs가 true일 경우 즉 로컬js파일을 임포트하게 해줄때 오류없이 임포트 o
+import {init} from "myPackage"는 모듈을 임포트 한다는 의미로 따로 npm패키지에 publish했다면 node_modues폴더에서,
+아니라면 include 설정범위 내에서 d.ts가 정의되어 있으면 오류없이 임포트 가능
